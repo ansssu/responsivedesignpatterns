@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Design Responsive Pattern: Mostly Fluid</title>
+    <link rel="stylesheet" href="commonstyle.css">
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .c1, .c2, .c3, .c4, .c5{
+            width: 100%;
+        }
+
+        @media(min-width: 600px){
+             .c2, .c3, .c4, .c5{
+                width: 50%;
+            }
+            
+        }
+
+        @media(min-width: 800px){
+
+            .c1{
+                width: 60%;
+            }
+
+            .c2{
+                width: 40%;
+            }
+
+            .c3, .c4{
+                width: 33%;
+            }
+
+            .c5{
+                width: 34%;
+            }
+
+            .container{
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+        }
+
+    </style>
+    
+
+    <div class="container" role="main">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+
+    </div>
+    
+</body>
+</html>
